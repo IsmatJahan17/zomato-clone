@@ -1,0 +1,135 @@
+body{
+    margin:auto;
+    background-color:rgb(236, 233, 233);
+}
+/* Header css Start*/
+#header{
+    height: 60px;
+   background-color:#cb202d;
+}
+
+#logo{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius:50%;
+    margin-left:5%;
+    margin-top: 0.5%;
+    position: absolute;
+    font-size: 30px;
+    color: #cb202d;
+   
+}
+#logo > span{ 
+    margin-left:33%;
+    margin-top: 16%;
+    position: absolute; 
+}
+#logo >span > a{
+    color:#cb202d !important;
+    text-decoration:none;
+}
+.box{
+    float:right;;
+    height:25px;
+    width:120px;
+    font-size:17px;
+    border:2px solid transparent; 
+    background:rgb(0, 177, 0);
+    color:white;
+    margin-right: 2%;
+    margin-top:1%;
+   
+}
+.box >a{
+    color:white !important;
+    text-decoration: none !important
+}
+
+/* Header css End*/
+
+#mainContainer{
+    height: 450px;
+    width:85%;
+    margin-bottom: 2%;
+    margin-left: 11%;
+    margin-top: 4%
+}
+.imgContainer{
+    width: 40%;
+    height:300px;
+    border: 4px groove  gray;
+    float:left;
+    background-size: cover;
+}
+.imgContainer >img{
+    height: 300px;
+    width: 100%;
+
+}
+.contentContainer{
+    width: 50%;
+    height:450px;
+ 
+    float:left;
+    margin-left:3%;
+    margin-top: -2.5%;
+}
+.checked{
+    color:red
+}
+.cRating{
+    color:rgb(0, 126, 0);
+    margin-left: 2%;
+
+}
+#imgIcon1{
+    height:38px;
+    width:38px;
+    float:left;
+}
+#imgIcon2{
+    height:40px;
+    width:40px;
+    float: left;
+    margin-top: -3%;
+    margin-left: 22%;
+    
+}
+#imgIcon3{
+    height:40px;
+    width:40px;
+    float: left;
+    margin-top: -2%;
+    margin-left:5%
+}
+.icon-feature{
+    display: inline-block;
+
+}
+.feature{
+    float: left;
+    font-size:10px;
+    margin-left: 6px;
+}
+h2{
+    font-size:35px;
+    color:green
+}
+.btn{
+    height:40px;
+    width:200px;
+    background-color:rgb(114, 241, 10);
+    font: 20px;
+    color: white;
+    border:2px solid transparent; 
+
+
+}
+.btn-proceed{
+    background-color:rgb(224, 27, 1)
+}
+
+.footer{
+    
+}
