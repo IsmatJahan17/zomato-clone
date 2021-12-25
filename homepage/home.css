@@ -2,31 +2,40 @@ body{
     margin:auto
 }
 /* Header css start*/
-#header{
+.navbar{
     height: 60px;
    background-color: #cb202d;
+   margin:auto;
+   border-radius: 0%;
 }
-#icon{
+.navbar-brand{
+    display: inline-block;
     float: left;
-    margin-left: 1%;
-    position: absolute;
-    margin-top: -1%;
-    color: white
 
 }
-.box{
-    float:right;;
-    height:25px;
-    width:120px;
-    font-size:17px;
-    border:2px solid transparent; 
-    background:rgb(0, 177, 0);
-    color:white;
-    margin-right: 2%;
-    margin-top:1%;
+
+#icon{ 
+    color: white;
+    font-family: "Helvetica Neue",Helvetica;
+    font-size:30px
+
+}
+.btnn{
+   
+    float: right;
+    margin-right:2%;
+   font-size:15px;
+    margin-top:-4%;
+    position:relative;
+    
+    
+    
    
 }
-.box >a{
+.btn:hover{
+    transform : scale(1.1)
+}
+.btn >a{
     color:white !important;
     text-decoration: none !important
 
@@ -51,7 +60,17 @@ body{
     margin-top: 2%;
     position: absolute;
     font-size: 80px;
-    color: #cb202d
+    font-family:'Times New Roman', Times, serif;
+    color: #cb202d;
+    animation: movelogo 20s infinite;
+}
+@keyframes movelogo {
+    0% {margin-left:44%;}
+    25% {margin-left:1%;}
+    50% {margin-left:44%;}
+    75% {margin-left:86%;}
+    100% {margin-left:44%}
+
 }
 #logo > span{ 
     margin-left:33%;
@@ -64,22 +83,46 @@ body{
     position: absolute; 
     font-size: 32px;
     color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
     
    
 }
-.dropdown{
+#heading:hover{
+    transition: font-size 2s , margin-left 2s;
+    font-size:35px ;
+   
+    margin-left: 31% ;
+}
+.cityrest{
     height: 60px;
     width:60%;
     margin-left:25%;
     margin-top: 21%;
     position: absolute;
+    
+    
 }
-select{
-    height:60px;
-    width:35%
+.city{
+    height:43px;
+    width:28%;
+    margin-left: 9%;
+    margin-top:1%;
+    
 }
-.restaurant-select{
-    width:50% 
+.cmenu{
+    margin-left:11%
+}
+
+.restaurant{
+    height:43px;
+    width:39% ;
+    margin-left: 40%;
+    margin-top:-5.8%;
+    display: inline-block;
+    float:left;
+}
+.rmenu{
+    margin-left:40%
 }
 
 /* Quick Search css*/
@@ -115,6 +158,10 @@ select{
   
     
 }
+.tile-container:hover{
+    transform: scale(1.1);
+
+}
 .tileComponent1{
 width:100%;
 height:70%;
@@ -146,6 +193,8 @@ height:70%;
 .componentSubHeading{
     color: rgb(85, 81, 81);
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: -1%;
     
 }
 .socialBox{
@@ -170,7 +219,7 @@ height:70%;
     font-size:20px;
     font-weight:bold;
     margin-right: 1.5%;
-    margin-top: -4%;
+    margin-top: -6%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 
@@ -179,7 +228,7 @@ height:70%;
 #social{
     float: right;
     margin-right: 3%;
-    margin-top: -2%;
+    margin-top: -4%;
     
 }
 
@@ -204,95 +253,204 @@ a{
     border-radius: 23%
 }
 
-@media screen and (max-width:1200px) {
 
+
+@media screen and (max-width:1200px) {
     #heading{
         margin-left:28%;
         margin-top: 19%;
+    }
+    #heading:hover{
+        font-size:34px ;
+       
+        margin-left: 28% ;
     }
     .dropdown{
         margin-left:25%;
         margin-top: 25%;
     }
+    .city{
+        margin-left: -17%;
+        margin-top: -39%;
+    }
+    .cmenu {
+        margin-left: -17%;
+        margin-top:-16%
+    }
+    .restaurant{
+        margin-left: 19%;
+        margin-top: -58.5%;
+    }
+    .rmenu{
+        margin-left:19% ;
+        margin-top:-49%
+    }
+    #socialLink{
+        margin-top: -7%;
+    }
    
 }
 @media screen and (max-width:1000px){
-    
     #heading{
         margin-left:23%;
-        margin-top: 24%;
+        margin-top: 26%;
     }
-    .box{
-        margin-top:1.5%
+    #heading:hover{
+        font-size:34px ;
+       
+        margin-left: 23% ;
     }
+    
     .dropdown{
         margin-left:26.5%;
         margin-top: 31%;
     }
+    .city{
+        height:43px;
+        width:45%;
+        margin-left: -36%;
+        margin-top: -21%;
+    }
+    .cmenu {
+        margin-left: -36%;
+        margin-top:-7%
+    }
+    .restaurant{
+        height:43px;
+        width:56%;
+        margin-left: 15%;
+        margin-top: -59.5%;
+    }
+    .rmenu{
+        margin-left:15% ;
+        margin-top:-48%
+    }
+    .btnn{
+        margin-top: -6%;
+    }
     #social{
-        margin-top: -2%;
+        margin-top: -4%;
     }
     #socialLink{
-        margin-top: -5%;
+        margin-top: -7%;
     }
     
 }
 @media screen and (max-width:800px){
-   
+    
     #heading{
-        margin-left:21%;
+        margin-left:20%;
         margin-top: 30%;
         font-size:28px;
     }
-    .box{
-        margin-top:2%
+    #heading:hover{
+        font-size:30px ;
+       
+        margin-left: 18% ;
     }
+    
     .dropdown{
         margin-left:25%;
         margin-top: 40%;
+    }
+    .city{
+        height:43px;
+        width:100%;
+        margin-left: -26%;
+        margin-top: -21%;
+    }
+    .cmenu {
+        margin-left: -26%;
+        margin-top:-5%
+    }
+    .restaurant{
+        height:43px;
+        width:100%;
+        margin-left: -26%;
+        margin-top: -58.5%;
+    }
+    .rmenu{
+        margin-left:-26% ;
+        margin-top:-33%
+    }
+    .btnn{
+        margin-top: -7%;
     }
     #logo{
         height: 135px;
         width: 135px;
         margin-left:40%;
         margin-top: 4%;
+        font-size:75px
     }
     
     .tile-container{
         width: 44%;
+        margin-left: 5%;
     }
     #social{
-        margin-top: -3%;
+        margin-top: -5%;
     }
     #socialLink{
-        margin-top: -7%;
+        margin-top: -9%;
     }
 }
 @media screen and (max-width:600px){
-
 #heading{
-    margin-left:12%;
+    margin-left:15%;
     margin-top: 40%;
     font-size:26px;
+}
+#heading:hover{
+    font-size:27px ;
+   
+    margin-left: 13% ;
 }
 .dropdown{
     margin-left:25%;
     margin-top: 50%;
 }
+.city{
+    height:43px;
+    width:100%;
+    margin-left: -26%;
+    margin-top: 4%;
+}
+.cmenu {
+    margin-left: -26%;
+    margin-top:1%
+}
+.restaurant{
+    height:43px;
+    width:100%;
+    margin-left: -26%;
+    margin-top: -65.5%;
+}
+.rmenu{
+    margin-left:-26% ;
+    margin-top:-45%
+}
+.btnn{
+    margin-top: -9%;
+}
 #logo{
-    height: 130px;
-    width: 130px;
+    height: 125px;
+    width: 125px;
     margin-left:35%;
     margin-top: 6%;
+    font-size:68px
 }
 
 .tile-container{
-    width: 70%;
+    width: 80%;
+    margin-left:10%
 }
-.box{
-    margin-top:3%
-}
+
 #socialLink{
-    margin-top: -9%;
+    margin-top: -12%;
 }
+#social{
+    margin-top: -6%;
+}
+
 }

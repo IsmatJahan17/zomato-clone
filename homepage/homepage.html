@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="home.css" rel="stylesheet" type="text/css"/>
+       
     </head>
-        <body>
-            <header id="header">
-                <div id="icon">
-                    <h1>Jahan's Xomato</h1>
+        <body >
+            <header  >
+                <nav class="navbar navbar-default">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <div class=" navbar-brand" id="icon"  >
+                    Jahan's Xomato
                 </div>
+            </nav>
+            
                 <div>
-                    <button class="box"> <a href="#">LogIn/SignUp</a></button>
+                    <button type="button" class="btn btn-success btnn "> <a href="#">LogIn/SignUp</a></button>
                 </div>
+            </div>
+            </div>
+           
 
             </header>
             <!--Search Start-->
-            <div id="search">
-                <div id="logo">
+            <div  id="search">
+                <div  id="logo">
                     <span>J!</span>
                 </div>
-                <div id="heading">
+                <div  id="heading">
                     Find The Best Restaurants Near You
                 </div>
-                <div class="dropdown">
-                    <select>
-                        <option>----SELECT CITY----</option>
-                        <option> Delhi  </option> 
-                        <option> Mumbai </option> 
-                        <option> Pune  </option>      
-                    </select>
-                
-                    <select class="restaurant-select">
-                        <option>----SELECT RESTAURANT----</option>
-                    </select>
+                <div  class="cityrest ">
+                    <div class="dropdown ">
+                        
+
+                    <input type="text"  placeholder=" Search City" class="btn btn-light dropdown-toggle city  " data-toggle="dropdown" >
+                      <ul class="dropdown-menu cmenu">
+                          <li><a href="#">Kolkata</a></li>
+                          <li><a href="#">Delhi</a></li>
+                          <li><a href="#">Mumbai</a></li>
+                          <li><a href="#">Bangalore</a></li>
+                        </ul>
+                    
+                    </div>
+                    <div class="dropdown">
+                        <input type="text" placeholder="Search Restaurants" class="btn btn-light dropdown-toggle restaurant " data-toggle="dropdown">
+                       
+                            
+                        
+                            
+                        <ul class="dropdown-menu rmenu">
+                          <li><a href="#">Egger's Madhouse</a></li>
+                          <li><a href="#">China Wall</a></li>
+                          <li><a href="#">Seven South</a></li>
+                          <li><a href="#">Hyderabadi Heaven</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
+
+                
+            </div>
             <!--Search End-->
 
-            </div>
+            
             <div id="Quicksearch">
                 <span id="QuickHeading">
                     Quick Search
@@ -64,7 +95,7 @@
                 </div>
                 <div class="tile-container">
                     <div class="tileComponent1">
-                        <img src="images/snacks.jpg" alt="Snacks" />
+                        <img  src="images/snacks.jpg" alt="Snacks" />
 
                     </div>
                     <div class="tileComponent2">
